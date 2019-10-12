@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 
 function App() {
@@ -8,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+            This is my boilerplate code for react and heroku. Feel free to use it.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://luffy1727.github.io/my-portfolio/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+            Author
         </a>
       </header>
     </div>
