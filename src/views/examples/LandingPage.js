@@ -16,6 +16,7 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
+import News from "components/News/News";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -254,6 +255,7 @@ function LandingPage() {
             </div>
           </Container>
         </div>
+        {News()}
         <div className="section section-contact-us text-center">
           <Container>
             <h2 className="title">Want to work with us?</h2>
