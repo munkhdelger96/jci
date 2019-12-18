@@ -8,8 +8,6 @@ import {
 } from "reactstrap";
 
 function NewsItem(news) {
-  console.log(news);
-
   return (
     <Col md="4">
       <div className="news-item">

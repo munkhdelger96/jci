@@ -8,8 +8,6 @@ import {
 } from "reactstrap";
 
 function EventItem(event) {
-  console.log(event);
-
   return (
     <Col md="4">
       <div className="event-item block-index-upcoming-item"  style={{backgroundImage: "url("+event.image+")"}}>
