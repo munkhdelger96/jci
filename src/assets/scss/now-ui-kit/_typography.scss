@@ -43,7 +43,7 @@ h3, .h3{
 h4, .h4{
     font-size: $font-size-h4;
     line-height: 1.45em;
-    margin-top: $margin-base-vertical * 2;
+    // margin-top: $margin-base-vertical * 2;
     margin-bottom: $margin-base-vertical;
 
     & + .category,
@@ -89,10 +89,14 @@ p{
     }
 }
 
+.bold{
+    font-weight: $font-weight-bold;
+}
+
 .description,
 .card-description,
 .footer-big p{
-    color: $dark-gray;
+    color: $light-black;
     font-weight: $font-weight-light;
 }
 .category{
@@ -157,5 +161,49 @@ p{
         small{
             color: $opacity-8;
         }
+    }
+}
+
+$base-spacing: 10px;
+$sides: top left right bottom;
+$total: 10;
+
+@for $i from 1 through $total {
+    @each $side in $sides {
+        .m-#{str-slice($side, 0, 1)}-#{$i} {
+            margin-#{$side}: $i * $base-spacing;
+        }
+        .p-#{str-slice($side, 0, 1)}-#{$i} {
+            padding-#{$side}: $i * $base-spacing;
+        }
+    }
+    .m-#{$i} {
+        margin: $i * $base-spacing;
+    }
+    .m-x-#{$i} {
+        margin-left: $i * $base-spacing;
+        margin-right: $i * $base-spacing;
+    }
+    .m-y-#{$i} {
+        margin-top: $i * $base-spacing;
+        margin-bottom: $i * $base-spacing;
+    }
+    .p-#{$i} {
+        padding: $i * $base-spacing;
+    }
+    .p-x-#{$i} {
+        padding-left: $i * $base-spacing;
+        padding-right: $i * $base-spacing;
+    }
+    .p-y-#{$i} {
+        padding-top: $i * $base-spacing;
+        padding-bottom: $i * $base-spacing;
+    }
+}
+
+$total: 9;
+@for $i from 1 through $total {
+    .f-w-#{$i} {
+        font-weight: $i * 100;
     }
 }
