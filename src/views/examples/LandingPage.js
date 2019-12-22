@@ -21,6 +21,7 @@ import Event from "components/Event/Event";
 import Member from "components/Member/Member";
 import About from "components/About";
 import ContactUs from "components/ContactUs";
+import project from "components/Project/Project";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -43,6 +44,7 @@ function LandingPage() {
         {Member()}
         {News()}
         {Event()}
+        {project()}
         {ContactUs(firstFocus, setFirstFocus, lastFocus, setLastFocus)}
         <DefaultFooter />
       </div>
