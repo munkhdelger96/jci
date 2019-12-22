@@ -16,16 +16,8 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
-import News from "components/News/News";
-import Event from "components/Event/Event";
-import Member from "components/Member/Member";
-import About from "components/About";
-import ContactUs from "components/ContactUs";
-import project from "components/Project/Project";
 
-function LandingPage() {
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
+function DynamicPage({title, component}) {
   React.useEffect(() => {
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
@@ -40,16 +32,11 @@ function LandingPage() {
       <ExamplesNavbar />
       <div className="wrapper">
         <LandingPageHeader />
-        {About()}
-        {Member()}
-        {News({page: -1})}
-        {Event()}
-        {project()}
-        {ContactUs(firstFocus, setFirstFocus, lastFocus, setLastFocus)}
+            {component({page: 0})}
         <DefaultFooter />
       </div>
     </>
   );
 }
 
-export default LandingPage;
+export default DynamicPage;
