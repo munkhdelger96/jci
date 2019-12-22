@@ -6,6 +6,7 @@ import {
   Button,
   Col
 } from "reactstrap";
+import moment from "moment";
 
 function NewsItem(news) {
   return (
@@ -19,7 +20,7 @@ function NewsItem(news) {
         <p className="category text-info m-t-1 m-b-1 f-w-5">News</p>
         <h4 className="bold">{news.title}</h4>
         <p className="description">
-          {news.time}
+          {moment(new Date(news.time.seconds*1000)).fromNow(true)}
         </p>
       </div>
     </Col>
