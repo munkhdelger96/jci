@@ -28,7 +28,7 @@ function News() {
   return (
     <div className="section section-news">
       <Container>
-        <h2 className="title">Here is our news</h2>
+        <h2 className="title text-center">Here is our news</h2>
         <div className="news">
           <Row>
             {NewsItem(news[0])}
