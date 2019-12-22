@@ -9,20 +9,8 @@ import {
   Col
 } from "reactstrap";
 import NewsItem from "./NewsItem";
+import { FirestoreCollection } from "react-firestore";
 
-const news = [{
-  image: "https://jci-production.s3.amazonaws.com/images/news/000/259/420/medium/Alex_and_Itai_Congress_.jpg?1575562037",
-  title: "The Magic of Tallinn Inspires JCI Members During the 2019 JCI World Congress",
-  time: "— 13 days ago"
-}, {
-  image: "https://jci-production.s3.amazonaws.com/images/news/000/251/448/medium/EUKHT2019.jpg?1570135491",
-  title: " JCI European Know-How Transfer: Taking Action for the Global Goals for Sustainable Development ",
-  time: "— 3 months ago"
-}, {
-  image: "https://jci-production.s3.amazonaws.com/images/news/000/243/833/medium/2019_Grantees_Anouncement_-_Instagram-06.jpg?1569517308",
-  title: "Global Youth Empowerment Fund Awards New Grantees",
-  time: "— 3 months ago"
-}];
 
 function News({page = -1}) {
   return (
@@ -31,9 +19,17 @@ function News({page = -1}) {
         <h2 className="title text-center">Here is our news</h2>
         <div className="news">
           <Row>
-            {NewsItem(news[0])}
-            {NewsItem(news[1])}
-            {NewsItem(news[2])}
+            <FirestoreCollection
+              path="news"
+              render={({ isLoading, data }) => {
+                return isLoading ? (
+                  <div>Уншиж байна</div>
+                ) : 
+                  data.map(news => (
+                    NewsItem(news)
+                  ))
+              }}
+            />
           </Row>
         </div>
         {
