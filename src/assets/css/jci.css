@@ -3,6 +3,11 @@
   width: 100%; 
 }
 
+.landing-page .section-project .project .project-item img {
+  height: 200px;
+  width: 100%; 
+}
+
 .section .button {
   width: 240px
 }

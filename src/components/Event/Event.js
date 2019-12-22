@@ -34,7 +34,7 @@ function Event() {
   return (
     <div className="section section-event">
       <Container>
-        <h2 className="title">Upcoming Events</h2>
+        <h2 className="title text-center">Here is our upcoming events</h2>
         <div className="event">
           <Row>
             {EventItem(events[0])}

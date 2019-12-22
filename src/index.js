@@ -26,17 +26,22 @@ import "assets/scss/now-ui-kit.scss";
 import "assets/demo/demo.css";
 import "assets/demo/nucleo-icons-page-styles.css";
 // pages for this kit
-import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
-import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
+import News from "components/News/News";
+import DynamicPage from "views/examples/DynamicPage";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Switch>
         <Route path="/index" render={props => <LandingPage {...props} />} />
+        <Route path="/news">
+          <DynamicPage
+            title="News"
+            component={News}
+          />
+        </Route> 
+        />
         {/* <Route
           path="/nucleo-icons"
           render={props => <NucleoIcons {...props} />}

@@ -24,11 +24,11 @@ const news = [{
   time: "— 3 months ago"
 }];
 
-function News() {
+function News({page = -1}) {
   return (
     <div className="section section-news">
       <Container>
-        <h2 className="title">Here is our news</h2>
+        <h2 className="title text-center">Here is our news</h2>
         <div className="news">
           <Row>
             {NewsItem(news[0])}
@@ -36,18 +36,20 @@ function News() {
             {NewsItem(news[2])}
           </Row>
         </div>
-        <div className="button container-fluid">
-          <Button
-            block
-            className="btn-round"
-            color="info"
-            href="#pablo"
-            onClick={e => e.preventDefault()}
-            size="lg"
-          >
-            ALL NEWS
-          </Button>
-        </div>
+        {
+          page == -1 && 
+          <div className="button container-fluid">
+            <Button
+              block
+              className="btn-round"
+              color="info"
+              href="/news"
+              size="lg"
+            >
+              ALL NEWS
+            </Button>
+          </div>
+        }
       </Container>
     </div>
   );
