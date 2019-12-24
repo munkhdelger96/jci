@@ -13,7 +13,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import ComponentNavbar from "components/Navbars/ComponentNavbar";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
 
@@ -29,9 +29,9 @@ function DynamicPage({title, component}) {
   });
   return (
     <>
-      <ExamplesNavbar />
+      <ComponentNavbar />
       <div className="wrapper">
-        <LandingPageHeader />
+        {/* <LandingPageHeader /> */}
             {component({page: 0})}
         <DefaultFooter />
       </div>

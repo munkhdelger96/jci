@@ -5,12 +5,11 @@ import React from "react";
 import {
   Button,
   Container,
-  Row,
-  Col
+  Row
 } from "reactstrap";
 import NewsItem from "./NewsItem";
 import { FirestoreCollection } from "react-firestore";
-
+import IndexNavbar from "components/Navbars/IndexNavbar";
 
 function News({page = -1}) {
   return (
