@@ -42,7 +42,7 @@ function LandingPage() {
         <LandingPageHeader />
         {About()}
         {Member()}
-        {News({page: -1})}
+        {News({page: -1, margin: false})}
         {Event()}
         {project()}
         {ContactUs(firstFocus, setFirstFocus, lastFocus, setLastFocus)}
