@@ -3,9 +3,18 @@
   width: 100%; 
 }
 
+.landing-page .section-news .news .news-item {
+  padding: 5px;
+  margin: 5px 0;
+}
+
 .landing-page .section-project .project .project-item img {
   height: 200px;
   width: 100%; 
+}
+
+.landing-page .section-project .project .project-item {
+  padding: 5px;
 }
 
 .section .button {
@@ -16,8 +25,16 @@
   height: 200px;
 }
 
+.landing-page .section-event .event .event-item {
+  padding: 5px;
+}
+
 .section .button {
   width: 240px
+}
+
+.full-heigh {
+  min-height: 80vh
 }
 
 .block-index-upcoming-item {
@@ -94,4 +111,20 @@
     padding: 6px 0;
     border-radius: 3px;
     width: 50px;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  cursor: pointer;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+  padding: 5px;
 }

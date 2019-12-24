@@ -29,36 +29,73 @@ import "assets/demo/nucleo-icons-page-styles.css";
 import LandingPage from "views/examples/LandingPage.js";
 import News from "components/News/News";
 import DynamicPage from "views/examples/DynamicPage";
+import firebase from '@firebase/app';
+import '@firebase/firestore';
+import { FirestoreProvider } from 'react-firestore';
+import moment from "moment";
+import NewsItem from "components/News/NewsItem";
+
+const config = {
+  apiKey: 'AIzaSyBu8LPVezE1JrVuktpsKxIogoEDrMyCBKU',
+  projectId: 'food-dev-85200',
+};
+
+firebase.initializeApp(config);
+
+moment.locale('mn', {
+  relativeTime : {
+      future : 'dans %s',
+      past : '1 цаг %s',
+      s : 'хэдэн секунд',
+      m : '1 минут',
+      mm : '%d минут',
+      h : '1 цаг',
+      hh : '%d цаг',
+      d : '1 өдөр',
+      dd : '%d өдөр',
+      M : '1 сар',
+      MM : '%d сар',
+      y : '1 жил',
+      yy : '%d жил'
+  },
+});
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
+  <FirestoreProvider firebase={firebase}>
+    <BrowserRouter>
       <Switch>
-        <Route path="/index" render={props => <LandingPage {...props} />} />
-        <Route path="/news">
-          <DynamicPage
-            title="News"
-            component={News}
+        <Switch>
+          <Route path="/index" render={props => <LandingPage {...props} />} />
+          <Route path="/news/:id">
+            <div>news detail</div>
+          </Route>
+          <Route path="/news">
+            <DynamicPage
+              component={NewsItem}
+              name={'news'}
+              url={'/news'}
+              isHome={false}
+            />
+          </Route>
           />
-        </Route> 
-        />
-        {/* <Route
-          path="/nucleo-icons"
-          render={props => <NucleoIcons {...props} />}
-        /> */}
-        {/* <Route
-          path="/landing-page"
-          render={props => <LandingPage {...props} />}
-        />
-        <Route
-          path="/profile-page"
-          render={props => <ProfilePage {...props} />}
-        />
-        <Route path="/login-page" render={props => <LoginPage {...props} />} /> */}
-        <Redirect to="/index" />
-        <Redirect from="/" to="/index" />
+          {/* <Route
+            path="/nucleo-icons"
+            render={props => <NucleoIcons {...props} />}
+          /> */}
+          {/* <Route
+            path="/landing-page"
+            render={props => <LandingPage {...props} />}
+            />
+            <Route
+            path="/profile-page"
+            render={props => <ProfilePage {...props} />}
+            />
+          <Route path="/login-page" render={props => <LoginPage {...props} />} /> */}
+          <Redirect to="/index" />
+          <Redirect from="/" to="/index" />
+        </Switch>
       </Switch>
-    </Switch>
-  </BrowserRouter>,
+    </BrowserRouter>,
+  </FirestoreProvider>,
   document.getElementById("root")
 );
