@@ -11,7 +11,7 @@ class LazyList extends React.Component {
     constructor(props) {
       super(props);
   
-      this.state = { numberOfItems : props.page == -1 ? 3 : 6, list : props.list };
+      this.state = { numberOfItems : props.isHome ? 3 : 6, list : props.list };
     }
   
     render() {
@@ -23,7 +23,7 @@ class LazyList extends React.Component {
                     {list.slice(0, numberOfItems).map(item => this.props.component(item))}
                 </Row>
                 {
-                    list.length > numberOfItems && this.props.page != -1 &&
+                    list.length > numberOfItems && !this.props.isHome &&
                     <div className="button container-fluid">
                     <Button
                         block

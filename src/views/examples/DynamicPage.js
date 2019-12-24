@@ -14,10 +14,10 @@ import {
 
 // core components
 import ComponentNavbar from "components/Navbars/ComponentNavbar";
-import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
+import DynamicContainer from "components/DynamicContainer";
 
-function DynamicPage({title, component}) {
+function DynamicPage({component, name, url}) {
   React.useEffect(() => {
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
@@ -32,7 +32,12 @@ function DynamicPage({title, component}) {
       <ComponentNavbar />
       <div className="wrapper">
         {/* <LandingPageHeader /> */}
-            {component({page: 0})}
+          {DynamicContainer({
+            component,
+            name, 
+            url, 
+            isHome: false
+          })}
         <DefaultFooter />
       </div>
     </>
