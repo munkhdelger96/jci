@@ -22,6 +22,9 @@ import Member from "components/Member/Member";
 import About from "components/About";
 import ContactUs from "components/ContactUs";
 import project from "components/Project/Project";
+import NewsItem from "components/News/NewsItem";
+import DynamicPage from "./DynamicPage";
+import DynamicContainer from "components/DynamicContainer";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -42,7 +45,12 @@ function LandingPage() {
         <LandingPageHeader />
         {About()}
         {Member()}
-        {News({page: -1})}
+        {DynamicContainer({
+          isHome: true,
+          component: NewsItem,
+          url: '/news',
+          name: 'news'
+        })}
         {Event()}
         {project()}
         {ContactUs(firstFocus, setFirstFocus, lastFocus, setLastFocus)}

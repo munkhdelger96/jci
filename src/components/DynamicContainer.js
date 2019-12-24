@@ -5,41 +5,42 @@ import React from "react";
 import {
   Button,
   Container,
-  Row
+  Spinner
 } from "reactstrap";
-import NewsItem from "./NewsItem";
 import { FirestoreCollection } from "react-firestore";
 import LazyList from "components/LazyList";
 
-function News({page = -1, margin = true}) {
+function DynamicContainer({isHome = true, name, url, component}) {
   return (
-    <div className={"section section-news" + (margin && " m-t-10")}>
+    <div className={"section section-" +name+ (!isHome && " m-t-10 full-heigh")}>
       <Container>
-        <h2 className="title text-center">Here is our news</h2>
+        <h2 className="title text-center">Here is our {name}</h2>
         <row>
-        <div className="news">
+        <div className={name}>
           <FirestoreCollection
-            path="news"
+            path={name}
             sort="time:desc"
             render={({ isLoading, data }) => {
               return isLoading ? (
-                <div>Уншиж байна</div>
+                <center>
+                  <Spinner animation="border" className="m-t-3" color="secondary"/>
+                </center>
               ) :
-                <LazyList list={data} component={NewsItem} page={page}/>
+                <LazyList list={data} component={component} isHome={isHome}/>
             }}
           />
         </div>
           {
-            page == -1 && 
+            isHome && 
             <div className="button container-fluid">
               <Button
                 block
                 className="btn-round"
                 color="info"
-                href="/news"
+                href={url}
                 size="lg"
               >
-                ALL NEWS
+                ALL {name.toUpperCase()}
               </Button>
             </div>
           }
@@ -49,4 +50,4 @@ function News({page = -1, margin = true}) {
   );
 }
 
-export default News;
+export default DynamicContainer;

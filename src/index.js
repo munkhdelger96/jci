@@ -33,6 +33,7 @@ import firebase from '@firebase/app';
 import '@firebase/firestore';
 import { FirestoreProvider } from 'react-firestore';
 import moment from "moment";
+import NewsItem from "components/News/NewsItem";
 
 const config = {
   apiKey: 'AIzaSyBu8LPVezE1JrVuktpsKxIogoEDrMyCBKU',
@@ -67,8 +68,10 @@ ReactDOM.render(
           <Route path="/index" render={props => <LandingPage {...props} />} />
           <Route path="/news">
             <DynamicPage
-              title="News"
-              component={News}
+              component={NewsItem}
+              name={'news'}
+              url={'/news'}
+              isHome={false}
             />
           </Route>
           />
