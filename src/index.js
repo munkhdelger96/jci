@@ -66,6 +66,9 @@ ReactDOM.render(
       <Switch>
         <Switch>
           <Route path="/index" render={props => <LandingPage {...props} />} />
+          <Route path="/news/:id">
+            <div>news detail</div>
+          </Route>
           <Route path="/news">
             <DynamicPage
               component={NewsItem}
