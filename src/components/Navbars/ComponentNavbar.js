@@ -36,10 +36,23 @@ function ExamplesNavbar() {
           <div className="navbar-translate">
             <img
                     alt="..."
-                    className="img-fluid"
+                    className="navbar-img "
                     src={require ("../../assets/img/logo.png")}
                 >
-                </img>
+                </img>	
+            <button	
+              className="navbar-toggler navbar-toggler"	
+              onClick={() => {	
+                document.documentElement.classList.toggle("nav-open");	
+                setCollapseOpen(!collapseOpen);	
+              }}	
+              aria-expanded={collapseOpen}	
+              type="button"	
+            >	
+              <span className="navbar-toggler-bar top-bar"></span>	
+              <span className="navbar-toggler-bar middle-bar"></span>	
+              <span className="navbar-toggler-bar bottom-bar"></span>	
+            </button>
           </div>
           <Collapse
             className="justify-content-end"

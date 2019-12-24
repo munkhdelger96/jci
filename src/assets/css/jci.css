@@ -113,6 +113,9 @@
     width: 50px;
 }
 
+.navbar-img {
+  height: 70%;
+}
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
