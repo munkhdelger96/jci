@@ -27,13 +27,14 @@ import "assets/demo/demo.css";
 import "assets/demo/nucleo-icons-page-styles.css";
 // pages for this kit
 import LandingPage from "views/examples/LandingPage.js";
-import News from "components/News/News";
 import DynamicPage from "views/examples/DynamicPage";
+import DynamicDetailPage from "views/examples/DynamicDetailPage";
 import firebase from '@firebase/app';
 import '@firebase/firestore';
 import { FirestoreProvider } from 'react-firestore';
 import moment from "moment";
 import NewsItem from "components/News/NewsItem";
+import NewsDetail from "components/News/NewsDetail";
 
 const config = {
   apiKey: 'AIzaSyBu8LPVezE1JrVuktpsKxIogoEDrMyCBKU',
@@ -66,9 +67,15 @@ ReactDOM.render(
       <Switch>
         <Switch>
           <Route path="/index" render={props => <LandingPage {...props} />} />
-          <Route path="/news/:id">
-            <div>news detail</div>
-          </Route>
+          <Route 
+            path="/news/:id"
+            render={props => 
+              <DynamicDetailPage 
+                {...props}
+                component={NewsDetail} 
+              />
+            }  
+          />
           <Route path="/news">
             <DynamicPage
               component={NewsItem}
