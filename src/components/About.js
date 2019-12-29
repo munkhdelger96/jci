@@ -11,7 +11,7 @@ import {
 
 function About() {
   return (
-    <div className="section section-about-us">
+    <div id="about-us" className="section section-about-us">
         <Container>
             <Row>
                 <Col className="ml-auto mr-auto text-center" md="8">

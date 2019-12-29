@@ -33,13 +33,12 @@ function ExamplesNavbar() {
       
       <Navbar className={"fixed-top"} color="info" expand="lg">
         <Container>
-          <div className="navbar-translate">
+          <NavLink className="navbar-translate" href="/index">
             <img
-                    alt="..."
-                    className="navbar-img "
-                    src={require ("../../assets/img/logo.png")}
-                >
-                </img>	
+              alt="..."
+              className="navbar-img "
+              src={require ("../../assets/img/logo.png")}
+            />
             <button	
               className="navbar-toggler navbar-toggler"	
               onClick={() => {	
@@ -53,7 +52,7 @@ function ExamplesNavbar() {
               <span className="navbar-toggler-bar middle-bar"></span>	
               <span className="navbar-toggler-bar bottom-bar"></span>	
             </button>
-          </div>
+          </NavLink>
           <Collapse
             className="justify-content-end"
             isOpen={collapseOpen}
@@ -62,55 +61,23 @@ function ExamplesNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
-                  href="#pablo"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
+                  href="/index"
                 >
                   <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                  <p>Medee</p>
+                  <p>Бидний тухай</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href="/news"
+                >
+                  <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
+                  <p>Мэдээ</p>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
                   href="#pablo"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
-                >
-                  <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                  <p>Bidnii tuhai</p>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="#pablo"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
-                >
-                  <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                  <p>Bidnii tuuh</p>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="#pablo"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
                 >
                   <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                   <p>Zahirliin mendchilgee</p>
