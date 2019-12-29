@@ -7,7 +7,7 @@ import {
 } from "reactstrap";
 import moment from "moment";
 
-function NewsDetail({content, time}) {
+function NewsDetail({content, time, category}) {
   if (content == null) content = '### Хуудас олдсонгүй';
 
   content = content.replace(/\\n/g, '\r');
@@ -46,7 +46,7 @@ function NewsDetail({content, time}) {
                   Ангилал
                 </div>
                 <div className="font-color-dark-background">
-                  Үндсэн
+                  {category}
                 </div>  
               </div>
               <div className="p-t-2">

@@ -10,7 +10,7 @@ import moment from "moment";
 
 const NewsItem = withRouter ((props) => {
   const history = props.history;
-  const {image, title, time, id} = props;
+  const {image, title, time, id, category} = props;
 
   return (
     <Col md="4">
@@ -23,7 +23,7 @@ const NewsItem = withRouter ((props) => {
           className="img-fluid img-raised"
           src={image}
         ></img>
-        <p className="category text-info m-t-1 m-b-1 f-w-5">News</p>
+        <p className="category text-info m-t-1 m-b-1 f-w-5">{category}</p>
         <h4 className="bold">{title}</h4>
         <p className="description">
           {moment(new Date(time.seconds*1000)).fromNow(true)}
