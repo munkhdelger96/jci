@@ -24,17 +24,19 @@ class DynamicDetailPage extends React.Component {
       <>
         <ComponentNavbar />
         <div className="wrapper">
-          <FirestoreDocument
-              path={url}
-              render={({ isLoading, data }) => {
-                  return isLoading ? (
-                      <center>
-                          <Spinner animation="border" className="m-t-3" color="secondary"/>
-                      </center>
-                  ) : 
-                  component(data)
-              }}
-          />     
+          <div className="full-heigh">
+            <FirestoreDocument
+                path={url}
+                render={({ isLoading, data }) => {
+                    return isLoading ? (
+                        <center>
+                            <Spinner animation="border" className="m-t-10" color="secondary"/>
+                        </center>
+                    ) : 
+                    component(data)
+                }}
+            />
+          </div>
           <DefaultFooter />
         </div>
       </>
