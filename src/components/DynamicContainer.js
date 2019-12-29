@@ -12,7 +12,7 @@ import LazyList from "components/LazyList";
 
 function DynamicContainer({isHome = true, name, url, component}) {
   return (
-    <div className={"section section-" +name+ (!isHome && " m-t-10 full-heigh")}>
+    <div id={name} className={"section section-" +name+ (!isHome && " m-t-10 full-heigh")}>
       <Container>
         <h2 className="title text-center">Here is our {name}</h2>
         <row>

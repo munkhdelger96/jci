@@ -89,15 +89,11 @@ function ExamplesNavbar() {
           </UncontrolledDropdown>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/index?ref=nukr-examples-navbar"
-              target="_blank"
+              href="/index"
               id="navbar-brand"
             >
               Now Ui Kit
             </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
-            </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -124,12 +120,26 @@ function ExamplesNavbar() {
                   onClick={e => {
                     e.preventDefault();
                     document
-                      .getElementById("download-section")
-                      .scrollIntoView();
+                      .getElementById("about-us")
+                      .scrollIntoView({behavior: "smooth"});
                   }}
                 >
                   <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                  <p>Medee</p>
+                  <p>Бидний тухай</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href="#pablo"
+                  onClick={e => {
+                    e.preventDefault();
+                    document
+                      .getElementById("news")
+                      .scrollIntoView({behavior: "smooth"});
+                  }}
+                >
+                  <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
+                  <p>Мэдээ</p>
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -139,35 +149,7 @@ function ExamplesNavbar() {
                     e.preventDefault();
                     document
                       .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
-                >
-                  <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                  <p>Bidnii tuhai</p>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="#pablo"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
-                >
-                  <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                  <p>Bidnii tuuh</p>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="#pablo"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
+                      .scrollIntoView({behavior: "smooth"});
                   }}
                 >
                   <i className="now-ui-icons business_chart-pie-36 mr-1"></i>

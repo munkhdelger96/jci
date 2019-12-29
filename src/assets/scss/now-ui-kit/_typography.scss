@@ -199,6 +199,12 @@ $total: 10;
         padding-top: $i * $base-spacing;
         padding-bottom: $i * $base-spacing;
     }
+    .h-#{$i} {
+        height: $i * $base-spacing;
+    }
+    .w-#{$i} {
+        width: $i * $base-spacing;
+    }
 }
 
 $total: 9;
@@ -206,4 +212,21 @@ $total: 9;
     .f-w-#{$i} {
         font-weight: $i * 100;
     }
+}
+
+.font-color-info-color { 
+    color: $info-color;
+}
+
+.font-color-opacity-gray-3 { 
+    color: $link-disabled-color;
+}
+
+.font-color-dark-background { 
+    color: $black-color;
+}
+
+.h-center{
+    display: flex;
+    align-items: center;
 }
