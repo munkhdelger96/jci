@@ -35,6 +35,9 @@ import { FirestoreProvider } from 'react-firestore';
 import moment from "moment";
 import NewsItem from "components/News/NewsItem";
 import NewsDetail from "components/News/NewsDetail";
+import EventItem from "components/Event/EventItem";
+import MemberItem from "components/Member/MemberItem";
+import ProjectItem from "components/Project/ProjectItem";
 
 const config = {
   apiKey: 'AIzaSyBu8LPVezE1JrVuktpsKxIogoEDrMyCBKU',
@@ -76,11 +79,33 @@ ReactDOM.render(
               />
             }  
           />
+          <Route path="/events/:id">
+            <div>event detail</div>
+          </Route>
+          <Route path="/projects/:id">
+            <div>project detail</div>
+          </Route>
           <Route path="/news">
             <DynamicPage
               component={NewsItem}
               name={'news'}
               url={'/news'}
+              isHome={false}
+            />
+          </Route>
+          <Route path="/events">
+            <DynamicPage
+              component={EventItem}
+              name={'events'}
+              url={'/events'}
+              isHome={false}
+            />
+          </Route>
+          <Route path="/projects">
+            <DynamicPage
+              component={ProjectItem}
+              name={'projects'}
+              url={'/projects'}
               isHome={false}
             />
           </Route>
