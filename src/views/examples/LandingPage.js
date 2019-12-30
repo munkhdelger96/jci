@@ -10,7 +10,7 @@ import ContactUs from "components/ContactUs";
 import NewsItem from "components/News/NewsItem";
 import DynamicContainer from "components/DynamicContainer";
 import ProjectItem from "components/Project/ProjectItem";
-import DarkFooter from "components/Footers/DarkFooter";
+import Footer from "components/Footers/Footer";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -50,7 +50,7 @@ function LandingPage() {
           name: 'projects'
         })}
         {ContactUs(firstFocus, setFirstFocus, lastFocus, setLastFocus)}
-        <DarkFooter />
+        <Footer />
       </div>
     </>
   );

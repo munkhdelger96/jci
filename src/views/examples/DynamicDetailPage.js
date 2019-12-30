@@ -6,7 +6,7 @@ import {
 
 // core components
 import ComponentNavbar from "components/Navbars/ComponentNavbar";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
+import Footer from "components/Footers/Footer.js";
 import { FirestoreDocument } from "react-firestore";
 
 class DynamicDetailPage extends React.Component {
@@ -37,7 +37,7 @@ class DynamicDetailPage extends React.Component {
                 }}
             />
           </div>
-          <DefaultFooter />
+          <Footer />
         </div>
       </>
     );
