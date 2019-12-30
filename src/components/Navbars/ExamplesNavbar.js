@@ -57,19 +57,6 @@ function ExamplesNavbar() {
               className="navbar-img "
               src={require ("../../assets/img/logo.png")}
             />
-            <button	
-              className="navbar-toggler navbar-toggler"	
-              onClick={() => {	
-                document.documentElement.classList.toggle("nav-open");	
-                setCollapseOpen(!collapseOpen);	
-              }}	
-              aria-expanded={collapseOpen}	
-              type="button"	
-            >	
-              <span className="navbar-toggler-bar top-bar"></span>	
-              <span className="navbar-toggler-bar middle-bar"></span>	
-              <span className="navbar-toggler-bar bottom-bar"></span>	
-            </button>
           </NavLink>
           <div className="navbar-translate">
             <button
@@ -116,7 +103,7 @@ function ExamplesNavbar() {
                       .scrollIntoView({behavior: "smooth"});
                   }}
                 >
-                  <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
+                  <i className="now-ui-icons education_paper mr-1"></i>
                   <p>Мэдээ</p>
                 </NavLink>
               </NavItem>
@@ -130,7 +117,7 @@ function ExamplesNavbar() {
                       .scrollIntoView({behavior: "smooth"});
                   }}
                 >
-                  <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
+                  <i className="now-ui-icons business_globe mr-1"></i>
                   <p>Aрга хэмжээ</p>
                 </NavLink>
               </NavItem>
@@ -156,7 +143,7 @@ function ExamplesNavbar() {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <i className="now-ui-icons design_app mr-1"></i>
+                  <i className="now-ui-icons education_hat mr-1"></i>
                   <p>Бидний түүх</p>
                 </DropdownToggle>
                 <DropdownMenu>
