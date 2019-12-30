@@ -70,6 +70,7 @@ function ExamplesNavbar() {
               <span className="navbar-toggler-bar middle-bar"></span>	
               <span className="navbar-toggler-bar bottom-bar"></span>	
             </button>
+
           </NavLink>
           <div className="navbar-translate">
             <button
