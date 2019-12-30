@@ -5,8 +5,6 @@ import React from "react";
 import {
   Button,
   Container,
-  Row,
-  Col
 } from "reactstrap";
 import ProjectItem from "./ProjectItem";
 import { FirestoreCollection } from "react-firestore";

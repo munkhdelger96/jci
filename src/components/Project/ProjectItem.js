@@ -15,7 +15,7 @@ const ProjectItem = withRouter ((props) => {
     <Col md="4">
       <div 
         className="news-item hvr-grow hvr-grow:hover .hvr-grow:focus .hvr-grow:active"
-        onClick = {() => {history.push('/news/'+id)}}
+        onClick = {() => {history.push('/projects/'+id)}}
       >
         <img
           alt="..."

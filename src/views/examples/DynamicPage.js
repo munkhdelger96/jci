@@ -1,20 +1,8 @@
 import React from "react";
 
-// reactstrap components
-import {
-  Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
-  Container,
-  Row,
-  Col
-} from "reactstrap";
-
 // core components
 import ComponentNavbar from "components/Navbars/ComponentNavbar";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
+import DarkFooter from "components/Footers/DarkFooter";
 import DynamicContainer from "components/DynamicContainer";
 
 function DynamicPage({component, name, url}) {
@@ -38,7 +26,7 @@ function DynamicPage({component, name, url}) {
             url, 
             isHome: false
           })}
-        <DefaultFooter />
+        <DarkFooter />
       </div>
     </>
   );
