@@ -37,6 +37,7 @@ import NewsItem from "components/News/NewsItem";
 import NewsDetail from "components/News/NewsDetail";
 import EventItem from "components/Event/EventItem";
 import MemberItem from "components/Member/MemberItem";
+import ProjectItem from "components/Project/ProjectItem";
 
 const config = {
   apiKey: 'AIzaSyBu8LPVezE1JrVuktpsKxIogoEDrMyCBKU',
@@ -81,8 +82,8 @@ ReactDOM.render(
           <Route path="/events/:id">
             <div>event detail</div>
           </Route>
-          <Route path="/members/:id">
-            <div>member detail</div>
+          <Route path="/projects/:id">
+            <div>project detail</div>
           </Route>
           <Route path="/news">
             <DynamicPage
@@ -100,11 +101,11 @@ ReactDOM.render(
               isHome={false}
             />
           </Route>
-          <Route path="/members">
+          <Route path="/projects">
             <DynamicPage
-              component={MemberItem}
-              name={'members'}
-              url={'/members'}
+              component={ProjectItem}
+              name={'projects'}
+              url={'/projects'}
               isHome={false}
             />
           </Route>

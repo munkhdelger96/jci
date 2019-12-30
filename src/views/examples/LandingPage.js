@@ -25,6 +25,7 @@ import ContactUs from "components/ContactUs";
 import project from "components/Project/Project";
 import NewsItem from "components/News/NewsItem";
 import DynamicContainer from "components/DynamicContainer";
+import ProjectItem from "components/Project/ProjectItem";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -57,7 +58,12 @@ function LandingPage() {
           url: '/events',
           name: 'events'
         })}
-        {project()}
+        {DynamicContainer({
+          isHome: true,
+          component: ProjectItem,
+          url: '/projects',
+          name: 'projects'
+        })}
         {ContactUs(firstFocus, setFirstFocus, lastFocus, setLastFocus)}
         <DefaultFooter />
       </div>

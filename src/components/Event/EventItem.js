@@ -11,9 +11,6 @@ import {
 const EventItem = withRouter ((props) => {
   const history = props.history;
   const {image, location, title, time, id} = props;
-
-  console.log(new Date(time.seconds*1000).getDate())
-
   return (
     <Col md="4">
       {/* <div 
