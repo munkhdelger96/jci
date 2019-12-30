@@ -94,7 +94,7 @@ function ExamplesNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
-                  href="#pablo"
+                  href="#"
                   onClick={e => {
                     e.preventDefault();
                     document
@@ -108,7 +108,7 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#pablo"
+                  href="#"
                   onClick={e => {
                     e.preventDefault();
                     document
@@ -122,28 +122,42 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#pablo"
+                  href="#"
                   onClick={e => {
                     e.preventDefault();
                     document
-                      .getElementById("download-section")
+                      .getElementById("events")
                       .scrollIntoView({behavior: "smooth"});
                   }}
                 >
                   <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                  <p>Zahirliin mendchilgee</p>
+                  <p>Aрга хэмжээ</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href="#"
+                  onClick={e => {
+                    e.preventDefault();
+                    document
+                      .getElementById("projects")
+                      .scrollIntoView({behavior: "smooth"});
+                  }}
+                >
+                  <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
+                  <p>Төслүүд</p>
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
-                  href="#pablo"
+                  href="#"
                   nav
                   onClick={e => e.preventDefault()}
                 >
                   <i className="now-ui-icons design_app mr-1"></i>
-                  <p>Bidnii tuuh</p>
+                  <p>Бидний түүх</p>
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem to="/index" tag={Link}>
@@ -151,21 +165,21 @@ function ExamplesNavbar() {
                     2019
                   </DropdownItem>
                   <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
+                    href="#"
                     target="_blank"
                   >
                     <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
                     2018
                   </DropdownItem>
                   <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
+                    href="#"
                     target="_blank"
                   >
                     <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
                     2017
                   </DropdownItem>
                   <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
+                    href="#"
                     target="_blank"
                   >
                     <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
