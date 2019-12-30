@@ -3,6 +3,13 @@
       display: none;
   }
 }
+@media only screen and (max-width: 770px) {
+  .center-me-small {
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+  }
+}
 @media only screen and (min-width: 770px) {
   .show-me-small {
       display: none;
@@ -156,4 +163,8 @@
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.01);
   transform: scale(1.01);
+}
+
+.footer a {
+  color: #2CA8FF;
 }

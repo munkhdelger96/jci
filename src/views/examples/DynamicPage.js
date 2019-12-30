@@ -2,7 +2,7 @@ import React from "react";
 
 // core components
 import ComponentNavbar from "components/Navbars/ComponentNavbar";
-import DarkFooter from "components/Footers/DarkFooter";
+import Footer from "components/Footers/Footer";
 import DynamicContainer from "components/DynamicContainer";
 
 function DynamicPage({component, name, url}) {
@@ -26,7 +26,7 @@ function DynamicPage({component, name, url}) {
             url, 
             isHome: false
           })}
-        <DarkFooter />
+        <Footer />
       </div>
     </>
   );

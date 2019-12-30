@@ -67,13 +67,7 @@
     .section-nucleo-icons .container .row > [class*="col-"]:first-child{
         text-align: center;
     }
-
-    .footer{
-        .copyright{
-            text-align: right;
-        }
-    }
-
+    
     .section-nucleo-icons .icons-container{
         margin-top: 65px;
     }
@@ -222,12 +216,6 @@
           margin-right: 5px;
           position: relative;
           top: 1px;
-        }
-    }
-
-    .footer{
-        .copyright{
-            float: right;
         }
     }
 }
