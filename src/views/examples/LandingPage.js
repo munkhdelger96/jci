@@ -26,6 +26,7 @@ import project from "components/Project/Project";
 import NewsItem from "components/News/NewsItem";
 import DynamicContainer from "components/DynamicContainer";
 import ProjectItem from "components/Project/ProjectItem";
+import DarkFooter from "components/Footers/DarkFooter";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -65,7 +66,7 @@ function LandingPage() {
           name: 'projects'
         })}
         {ContactUs(firstFocus, setFirstFocus, lastFocus, setLastFocus)}
-        <DefaultFooter />
+        <DarkFooter />
       </div>
     </>
   );

@@ -6,50 +6,16 @@ import { Container } from "reactstrap";
 
 function DarkFooter() {
   return (
-    <footer className="footer" data-background-color="black">
+    <footer className="footer footer-default">
       <Container>
-        <nav>
-          <ul>
-            <li>
-              <a
-                href="https://www.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
-              >
-                Creative Tim
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://presentation.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://blog.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
-              >
-                Blog
-              </a>
-            </li>
-          </ul>
-        </nav>
+
         <div className="copyright" id="copyright">
-          © {new Date().getFullYear()}, Designed by{" "}
+          © {new Date().getFullYear()} JCI Ulaanbaatar. All Rights Reserved. Powered by &nbsp;
           <a
-            href="https://www.invisionapp.com?ref=nukr-dark-footer"
+            href="https://github.com/luffy1727/my-portfolio/"
             target="_blank"
           >
-            Invision
-          </a>
-          . Coded by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=nukr-dark-footer"
-            target="_blank"
-          >
-            Creative Tim
+            TwixDevs Solutions
           </a>
           .
         </div>
