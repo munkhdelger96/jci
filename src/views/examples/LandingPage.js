@@ -18,12 +18,12 @@ import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
 import News from "components/News/News";
 import Event from "components/Event/Event";
+import EventItem from "components/Event/EventItem";
 import Member from "components/Member/Member";
 import About from "components/About";
 import ContactUs from "components/ContactUs";
 import project from "components/Project/Project";
 import NewsItem from "components/News/NewsItem";
-import DynamicPage from "./DynamicPage";
 import DynamicContainer from "components/DynamicContainer";
 
 function LandingPage() {
@@ -51,7 +51,12 @@ function LandingPage() {
           url: '/news',
           name: 'news'
         })}
-        {Event()}
+        {DynamicContainer({
+          isHome: true,
+          component: EventItem,
+          url: '/events',
+          name: 'events'
+        })}
         {project()}
         {ContactUs(firstFocus, setFirstFocus, lastFocus, setLastFocus)}
         <DefaultFooter />

@@ -15,7 +15,6 @@ function DynamicContainer({isHome = true, name, url, component}) {
     <div id={name} className={"section section-" +name+ (!isHome && " m-t-10 full-heigh")}>
       <Container>
         <h2 className="title text-center">Here is our {name}</h2>
-        <row>
         <div className={name}>
           <FirestoreCollection
             path={name}
@@ -44,7 +43,6 @@ function DynamicContainer({isHome = true, name, url, component}) {
               </Button>
             </div>
           }
-        </row>
       </Container>
     </div>
   );
