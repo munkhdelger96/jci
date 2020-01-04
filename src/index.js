@@ -109,7 +109,6 @@ ReactDOM.render(
               isHome={false}
             />
           </Route>
-          />
           {/* <Route
             path="/nucleo-icons"
             render={props => <NucleoIcons {...props} />}
@@ -127,7 +126,7 @@ ReactDOM.render(
           <Redirect from="/" to="/index" />
         </Switch>
       </Switch>
-    </BrowserRouter>,
+    </BrowserRouter>
   </FirestoreProvider>,
   document.getElementById("root")
 );

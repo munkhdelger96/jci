@@ -11,6 +11,7 @@ import NewsItem from "components/News/NewsItem";
 import DynamicContainer from "components/DynamicContainer";
 import ProjectItem from "components/Project/ProjectItem";
 import Footer from "components/Footers/Footer";
+import Sponsors from "components/Sponsors";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -49,6 +50,7 @@ function LandingPage() {
           url: '/projects',
           name: 'projects'
         })}
+        <Sponsors />
         {ContactUs(firstFocus, setFirstFocus, lastFocus, setLastFocus)}
         <Footer />
       </div>
