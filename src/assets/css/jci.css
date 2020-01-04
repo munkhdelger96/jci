@@ -15,9 +15,11 @@
       display: none;
   }
 }
-.landing-page .section-news .news .news-item img {
+
+.item img {
   height: 200px;
-  width: 100%; 
+  width: 100%;
+  object-fit: cover; 
 }
 
 .landing-page .section-news .news .news-item {
