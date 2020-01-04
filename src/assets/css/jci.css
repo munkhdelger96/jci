@@ -22,6 +22,10 @@
   object-fit: cover; 
 }
 
+.nav-link {
+  padding: 0;
+}
+
 .landing-page .section-news .news .news-item {
   padding: 5px;
   margin: 5px 0;
