@@ -4,7 +4,6 @@ import React from "react";
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import EventItem from "components/Event/EventItem";
-import Member from "components/Member/Member";
 import About from "components/About";
 import ContactUs from "components/ContactUs";
 import NewsItem from "components/News/NewsItem";
@@ -12,6 +11,7 @@ import DynamicContainer from "components/DynamicContainer";
 import ProjectItem from "components/Project/ProjectItem";
 import Footer from "components/Footers/Footer";
 import Sponsors from "components/Sponsors";
+import MemberItem from "components/Member/MemberItem";
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -31,7 +31,12 @@ function LandingPage() {
       <div className="wrapper">
         <LandingPageHeader />
         {About()}
-        {Member()}
+        {DynamicContainer({
+          isHome: true,
+          component: MemberItem,
+          url: '/members',
+          name: 'members'
+        })}
         {DynamicContainer({
           isHome: true,
           component: NewsItem,

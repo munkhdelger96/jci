@@ -35,13 +35,14 @@ import { FirestoreProvider } from 'react-firestore';
 import moment from "moment";
 import NewsItem from "components/News/NewsItem";
 import NewsDetail from "components/News/NewsDetail";
+import ProjectDetail from "components/Project/ProjectDetail";
 import EventItem from "components/Event/EventItem";
 import MemberItem from "components/Member/MemberItem";
 import ProjectItem from "components/Project/ProjectItem";
 
 const config = {
-  apiKey: 'AIzaSyBu8LPVezE1JrVuktpsKxIogoEDrMyCBKU',
-  projectId: 'food-dev-85200',
+  apiKey: 'AIzaSyC5WntDlINc-Gh1AfWl_sPsbydvuQPqgzo',
+  projectId: 'jci-web-7f23c',
 };
 
 firebase.initializeApp(config);
@@ -82,8 +83,21 @@ ReactDOM.render(
           <Route path="/events/:id">
             <div>event detail</div>
           </Route>
-          <Route path="/projects/:id">
-            <div>project detail</div>
+          <Route path="/projects/:id"
+            render={props => 
+              <DynamicDetailPage 
+                {...props}
+                component={ProjectDetail} 
+              />
+            }
+          />
+          <Route path="/members">
+            <DynamicPage
+              component={MemberItem}
+              name={'members'}
+              url={'/members'}
+              isHome={false}
+            />
           </Route>
           <Route path="/news">
             <DynamicPage

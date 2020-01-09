@@ -26,6 +26,20 @@
   padding: 0;
 }
 
+.members-row {
+  text-align: center;
+}
+
+.member-img {
+  width: 120px;
+  height : 120px;
+}
+
+
+.landing-page .section-members {
+  padding:5px;
+}
+
 .landing-page .section-news .news .news-item {
   padding: 5px;
   margin: 5px 0;

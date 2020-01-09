@@ -6,10 +6,9 @@ import {
     Container,
 } from "reactstrap";
 import moment from "moment";
+import DynamicTitle from "components/Md/DynamicTitle";
 
-function NewsDetail({content, time, category}) {
-  console.log(content)
-  console.log(category)
+function ProjectDetail({title, content, time, category}) {
   if (content == null) content = '### Хуудас олдсонгүй';
 
   content = content.replace(/\\n/g, '\r');
@@ -61,6 +60,7 @@ function NewsDetail({content, time, category}) {
               </div>
             </Col>
             <Col md="10">
+              <DynamicTitle title = {title}/>
               <Markdown
                 options={{
                   overrides: {
@@ -119,4 +119,4 @@ function NewsDetail({content, time, category}) {
   );
 }
 
-export default NewsDetail;
+export default ProjectDetail;
