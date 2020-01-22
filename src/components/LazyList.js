@@ -10,7 +10,6 @@ import {
 class LazyList extends React.Component {
     constructor(props) {
       super(props);
-  
       this.state = { numberOfItems : props.isHome ? 3 : 6, list : props.list };
     }
   

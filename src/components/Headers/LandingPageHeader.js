@@ -33,32 +33,9 @@ function LandingPageHeader() {
         ></div>
         <div className="content-center">
           <Container>
-            <h1 className="title">This is our great company.</h1>
+            <h1 className="title">ENE TANII REKLAMNI ORON ZAI. HOID TALIIN ZURGAN DER YU TAWIH WE?</h1>
             <div className="text-center">
-              <Button
-                className="btn-icon btn-round"
-                color="info"
-                href="#pablo"
-                onClick={e => e.preventDefault()}
-              >
-                <i className="fab fa-facebook-square"></i>
-              </Button>
-              <Button
-                className="btn-icon btn-round"
-                color="info"
-                href="#pablo"
-                onClick={e => e.preventDefault()}
-              >
-                <i className="fab fa-twitter"></i>
-              </Button>
-              <Button
-                className="btn-icon btn-round"
-                color="info"
-                href="#pablo"
-                onClick={e => e.preventDefault()}
-              >
-                <i className="fab fa-google-plus"></i>
-              </Button>
+              <p>ENE CH MON ADIL</p>
             </div>
           </Container>
         </div>

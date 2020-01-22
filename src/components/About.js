@@ -15,33 +15,36 @@ function About() {
         <Container>
             <Row>
                 <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Who we are?</h2>
-                <h5 className="description">
-                    According to the National Oceanic and Atmospheric
-                    Administration, Ted, Scambos, NSIDClead scentist, puts the
-                    potentially record low maximum sea ice extent tihs year down
-                    to low ice extent in the Pacific and a late drop in ice extent
-                    in the Barents Sea.
-                </h5>
+                    <h2 className="title">Who we are?</h2>
+                    <h5 className="description">
+                        2020 он. Шинэ жаран, шинэ арваны эхлэл. 
+                        Технологийн хөгжил асар хурдтай явагдаж, хүн робот хоёр зэрэгцэн ажиллах, 
+                        орших шинэ эрин бидний өмнө ирээд байна. Бидний мэдэх ажлын байрууд устаж, 
+                        хиймэл оюун ухаанд байраа тавьж өгөх болоод байгаа энэ цаг үеийг цахим 
+                        шилжилтийн үе гэж тодорхойлж байна.<br></br> Залуус бид үүнийг мэдлэг шилжиж буй 
+                        цаг үе гэж хүлээн авч, өөрсдийгөө олон талаар хөгжүүлж, бусдад ч гэрэлтэй 
+                        сайн сайхныг түгээх, нийтээрээ урагшлан хөгжих эрин үе болгох учиртай
+                    </h5>
                 </Col>
             </Row>
             <div className="separator separator-primary"></div>
             <div className="section-story-overview">
                 <Row>
-                <Col md="6">
+                <Col md="5">
                     <div
                     className="image-container image-left"
                     style={{
                         backgroundImage:
-                        "url(" + require("assets/img/login.jpg") + ")"
+                        "url(" + require("assets/img/landing-page.jpg") + ")"
                     }}
                     >
                     <p className="blockquote blockquote-info">
-                        "Over the span of the satellite record, Arctic sea ice has
-                        been declining significantly, while sea ice in the
-                        Antarctichas increased very slightly" <br></br>
+                        "Бид хамтдаа хийж хэрэгжүүлж буй ажлынхаа гол бүр байж чадна.
+                        Залуус бидэнд ирээдүйг бүтээх эрх нь үүрэг хариуцлагатайгаа бий" <br></br>
                         <br></br>
-                        <small>-NOAA</small>
+                        <small>- Б.МӨНХТУГ<br></br>
+                        2020 оны Ерөнхийлөгч <br></br>
+                        JCI Централ,</small>
                     </p>
                     </div>
                 </Col>
@@ -54,18 +57,24 @@ function About() {
                     }}
                     ></div>
                     <h3>
-                    So what does the new record for the lowest level of winter
-                    ice actually mean
+                        Бид юу хийдэг вэ
                     </h3>
                     <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
+                        Jaycee-чүүд бид Тогтвортой хөгжлийн зорилгуудыг нийгэмд 
+                        сурталчилахад манлайлан ажиллаж, түгээн дэлгэрүүлэхэд өөрсдийн 
+                        төсөл хөтөлбөрөө чиглүүлдэг.<br></br> <br></br> <br></br> 
+                    </p>
+                </Col>
+                <Col className="ml-auto mr-auto text-center pad-top" md="8">
+                    <h3>
+                        2020 онд
+                    </h3>
+                    <p>
+                        2020 онд бид олон улсын болон бизнесийн хамтын ажиллагааг дэмжиж, 
+                        хөгжүүлж, гишүүдээ дэмжин ажиллана. Улмаар хамтран ажиллах байгууллагууд, 
+                        спонсоруудын хамтын зорилгод нийцүүлэн нийгэм, олон нийтэд хандсан 4 төсөл 
+                        хөтөлбөрөөр дамжуулан ТХЗ-ыг сурталчилж, шууд болон олон нийтийн хэрэгслээр 
+                        1,500,000 гаруй хүнд хүрч ажиллахаар төлөвлөж байна.
                     </p>
                 </Col>
                 </Row>
