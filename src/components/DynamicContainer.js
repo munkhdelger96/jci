@@ -1,7 +1,6 @@
 /*eslint-disable*/
 import React from "react";
 
-// reactstrap components
 import {
   Button,
   Container,
@@ -11,7 +10,10 @@ import { FirestoreCollection } from "react-firestore";
 import LazyList from "components/LazyList";
 
 function DynamicContainer({isHome = true, name, url, component}) {
-
+  let sort = 'time:desc';
+  if (name == 'members') {
+    sort = 'rank:asc';
+  }
   return (
     <div id={name} className={"section section-" + name + (!isHome && " m-t-10 full-heigh")}>
       <Container>
@@ -19,7 +21,7 @@ function DynamicContainer({isHome = true, name, url, component}) {
         <div className={name}>
           <FirestoreCollection
             path={name}
-            sort="time:desc"
+            sort= {sort}
             render={({ isLoading, data }) => {
               return isLoading ? (
                 <center>
