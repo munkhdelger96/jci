@@ -60,7 +60,6 @@ function ProjectDetail({title, content, time, category}) {
               </div>
             </Col>
             <Col md="10">
-              <DynamicTitle title = {title}/>
               <Markdown
                 options={{
                   overrides: {
@@ -70,15 +69,6 @@ function ProjectDetail({title, content, time, category}) {
                         style: {
                             fontSize: "30px!important",
                             lineHeight: "38px!important",
-                          }
-                        },
-                      },
-                      h3: {
-                        props: {
-                          className: 'h3 title text-center',
-                          style: {
-                            fontSize: "26px!important",
-                            lineHeight: "26px!important",
                           }
                         },
                       },
