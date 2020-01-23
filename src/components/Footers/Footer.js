@@ -76,14 +76,14 @@ function Footer() {
                     display: 'flex',
                     fontSize: '20px',
                   }}
-                  href="https://www.instagram.com/"
+                  href="https://www.youtube.com/channel/UChhvA4PwViKfWt2jEft6kNg"
                   target="_blank"
-                  id="instagram-tooltip"
+                  id="youtube-tooltip"
                 >
-                  <i className="fab fa-instagram"></i>
+                  <i className="fab fa-youtube"></i>
                 </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
+                <UncontrolledTooltip target="#youtube-tooltip">
+                  Find us on Youtube
                 </UncontrolledTooltip>
               </span>
             </div>
