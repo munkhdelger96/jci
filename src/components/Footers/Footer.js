@@ -30,9 +30,10 @@ function Footer() {
               >
                 central@jcimongolia.mn
               </a>
-
               <span className="m-t-1">
-                +976 88059632
+                <a class="phone-class" href="tel:+976 88059632"> 
+                 + 976 88059632
+                </a>
               </span>
 
             </div>
