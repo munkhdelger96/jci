@@ -17,8 +17,8 @@ function ContactUs(firstFocus, setFirstFocus, lastFocus, setLastFocus) {
   return (
     <div className="section section-contact-us text-center">
         <Container>
-            <h2 className="title">Want to work with us?</h2>
-            <p className="description">Your project is very important to us.</p>
+            <h2 className="title">Та бидэнтэй нэгдэхийг хүсэж байна уу?</h2>
+            <p className="description">Таны хувь нэмэр бидэнд маш чухал</p>
             <Row>
                 <Col className="text-center ml-auto mr-auto" lg="6" md="8">
                 <InputGroup
@@ -32,7 +32,7 @@ function ContactUs(firstFocus, setFirstFocus, lastFocus, setLastFocus) {
                     </InputGroupText>
                     </InputGroupAddon>
                     <Input
-                    placeholder="First Name..."
+                    placeholder="Нэр..."
                     type="text"
                     onFocus={() => setFirstFocus(true)}
                     onBlur={() => setFirstFocus(false)}
@@ -59,7 +59,7 @@ function ContactUs(firstFocus, setFirstFocus, lastFocus, setLastFocus) {
                     <Input
                     cols="80"
                     name="name"
-                    placeholder="Type a message..."
+                    placeholder="Зурвас..."
                     rows="4"
                     type="textarea"
                     ></Input>
@@ -73,7 +73,7 @@ function ContactUs(firstFocus, setFirstFocus, lastFocus, setLastFocus) {
                     onClick={e => e.preventDefault()}
                     size="lg"
                     >
-                    Send Message
+                    Зурвас илгээх
                     </Button>
                 </div>
                 </Col>
