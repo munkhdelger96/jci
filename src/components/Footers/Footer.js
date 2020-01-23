@@ -28,11 +28,11 @@ function Footer() {
                 target="_blank"
                 className="m-t-1"
               >
-                contact@jcimongolia.mn
+                central@jcimongolia.mn
               </a>
 
               <span className="m-t-1">
-                +976 12121212
+                +976 88059632
               </span>
 
             </div>
@@ -94,21 +94,13 @@ function Footer() {
             <h5>
               Хаяг
             </h5>
-            <p>Улаанбаатар хот, Чингэлтэй дүүрэг, 3-р хороо, Жуулчны гудамж-34 хаягт байрлах “Pearl tower” барилга</p>
+            <p>Монгол улс, Улаанбаатар хот, Баянгол дүүрэг, 3-р хороо, WW центр, 602 тоот</p>
             <span>
               <a
-                href="https://map.what3words.com/incoming.finer.diplomats/"
+                href="https://map.what3words.com/length.trespass.lung"
                 target="_blank"
               >
-                /// incoming.finer.diplomats
-              </a>
-            </span>
-            <span>
-              <a
-                href="https://map.what3words.com/өндөг.өргөжих.өнжих/"
-                target="_blank"
-              >
-                /// өндөг.өргөжих.өнжих
+                /// length.trespass.lung
               </a>
             </span>
           </Col>
