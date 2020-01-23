@@ -60,14 +60,14 @@ function Footer() {
                     display: 'flex',
                     fontSize: '20px',
                   }}
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/JCICentral/"
                   target="_blank"
                   id="facebook-tooltip"
                 >
                   <i className="fab fa-facebook-square"></i>
                 </NavLink>
                 <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
+                  Contact us on Facebook
                 </UncontrolledTooltip>
               </span>
               <span>
