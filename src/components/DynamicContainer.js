@@ -11,13 +11,19 @@ import LazyList from "components/LazyList";
 
 function DynamicContainer({isHome = true, name, url, component}) {
   let sort = 'time:desc';
+  let translation = {
+    'news': 'МЭДЭЭ',
+    'events': 'АРГА ХЭМЖЭЭ',
+    'projects': 'ТӨСЛҮҮД',
+    'members': 'ГИШҮҮД',
+  }
   if (name == 'members') {
     sort = 'rank:asc';
   }
   return (
     <div id={name} className={"section section-" + name + (!isHome && " m-t-10 full-heigh")}>
       <Container>
-        <h2 className="title text-center">Here is our {name}</h2>
+        <h2 className="title text-center">{translation[name]}</h2>
         <div className={name}>
           <FirestoreCollection
             path={name}
@@ -42,7 +48,7 @@ function DynamicContainer({isHome = true, name, url, component}) {
                 href={url}
                 size="lg"
               >
-                ALL {name.toUpperCase()}
+                БҮХ {translation[name].toUpperCase()}
               </Button>
             </div>
           }

@@ -18,7 +18,7 @@ function Sponsors() {
         <div className="sponsors p-b-5">
             <Container>
             <div className="">
-            <h2 className="title text-center">Here is our sponsors</h2>
+            <h2 className="title text-center">БИДНИЙ ХАМТРАГЧИД</h2>
                 <div className="sponsor-wrapper">
                     <div className="sponsor-wrapper-item">
                         <a className= "sponsor-item-a">

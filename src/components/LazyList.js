@@ -30,7 +30,7 @@ class LazyList extends React.Component {
                         color="info"
                         onClick={() => this.setState({numberOfItems: numberOfItems + 6})}
                     >
-                        MORE
+                        ИЛҮҮ
                     </Button>
                     </div>
                 }

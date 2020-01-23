@@ -21,7 +21,7 @@ const MemberItem = withRouter ((props) => {
                     <h4 className="title">{firstName} {lastName}</h4>
                     <p className="category text-info">{position}</p>
                     <p className="description">
-                        Joined Date: {joinedDate}
+                        Элссэн он: {joinedDate}
                     </p>
                 </div>
             </div> 

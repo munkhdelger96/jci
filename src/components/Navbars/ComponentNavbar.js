@@ -62,13 +62,7 @@ function ExamplesNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
-                  href="#"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                      .getElementById("about-us")
-                      .scrollIntoView({behavior: "smooth"});
-                  }}
+                  href="/index"
                 >
                   <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                   <p>Бидний тухай</p>
@@ -76,13 +70,7 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                      .getElementById("news")
-                      .scrollIntoView({behavior: "smooth"});
-                  }}
+                  href="/news"
                 >
                   <i className="now-ui-icons education_paper mr-1"></i>
                   <p>Мэдээ</p>
@@ -90,13 +78,7 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                      .getElementById("events")
-                      .scrollIntoView({behavior: "smooth"});
-                  }}
+                  href="/events"
                 >
                   <i className="now-ui-icons business_globe mr-1"></i>
                   <p>Aрга хэмжээ</p>
@@ -104,13 +86,7 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#"
-                  onClick={e => {
-                    e.preventDefault();
-                    document
-                      .getElementById("projects")
-                      .scrollIntoView({behavior: "smooth"});
-                  }}
+                  href="/projects"
                 >
                   <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                   <p>Төслүүд</p>
