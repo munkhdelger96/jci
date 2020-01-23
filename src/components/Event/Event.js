@@ -16,7 +16,7 @@ function Event({page = -1, margin = true}) {
   return (
     <div className={"section section-event" + (margin && " m-t-10")}>
       <Container>
-        <h2 className="title text-center">Here is our upcoming events</h2>
+        <h2 className="title text-center">АРГА ХЭМЖЭЭНҮҮД</h2>
         <div className="events">
           <FirestoreCollection
             path="events"
@@ -39,7 +39,7 @@ function Event({page = -1, margin = true}) {
                 href="/events"
                 size="lg"
               >
-                ALL NEWS
+                БҮХ АРГА ХЭМЖЭЭНҮҮД
               </Button>
             </div>
           }

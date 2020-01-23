@@ -15,7 +15,7 @@ function About() {
         <Container>
             <Row>
                 <Col className="ml-auto mr-auto text-center" md="8">
-                    <h2 className="title">Who we are?</h2>
+                    <h2 className="title">Бидний тухай</h2>
                     <h5 className="description">
                         2020 он. Шинэ жаран, шинэ арваны эхлэл. 
                         Технологийн хөгжил асар хурдтай явагдаж, хүн робот хоёр зэрэгцэн ажиллах, 

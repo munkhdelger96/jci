@@ -14,7 +14,7 @@ function Project({page = -1, margin = true}) {
   return (
     <div className={"section section-project" + (margin && " m-t-10")}>
       <Container>
-        <h2 className="title text-center">Here is our projects</h2>
+        <h2 className="title text-center">БИДНИЙ ТӨСЛҮҮД</h2>
         <div className="project">
           <FirestoreCollection
               path="projects"
@@ -37,7 +37,7 @@ function Project({page = -1, margin = true}) {
                 href="/projects"
                 size="lg"
               >
-                ALL PROJECTS
+                БҮХ ТӨСЛҮҮД
               </Button>
             </div>
           }
