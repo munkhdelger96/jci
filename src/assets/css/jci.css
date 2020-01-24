@@ -253,3 +253,12 @@
   padding-top: 30px;
 }
 
+.greetings-image-container {
+  height: 500px;
+  position: relative;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0.25rem;
+}

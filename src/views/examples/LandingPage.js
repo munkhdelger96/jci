@@ -5,6 +5,7 @@ import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import EventItem from "components/Event/EventItem";
 import About from "components/About";
+import Greetings from "components/Greetings";
 import ContactUs from "components/ContactUs";
 import NewsItem from "components/News/NewsItem";
 import DynamicContainer from "components/DynamicContainer";
@@ -31,6 +32,7 @@ function LandingPage() {
       <div className="wrapper">
         <LandingPageHeader />
         {About()}
+        {Greetings()}
         {DynamicContainer({
           isHome: true,
           component: MemberItem,
