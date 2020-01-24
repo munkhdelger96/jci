@@ -31,8 +31,8 @@ function LandingPage() {
       <ExamplesNavbar />
       <div className="wrapper">
         <LandingPageHeader />
-        {About()}
         {Greetings()}
+        {About()}
         {DynamicContainer({
           isHome: true,
           component: MemberItem,
