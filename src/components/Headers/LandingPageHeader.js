@@ -7,6 +7,7 @@ import { Button, Container } from "reactstrap";
 
 function LandingPageHeader() {
   let pageHeader = React.createRef();
+  let backgrounImage = require("assets/img/bg_large.jpg");
 
   React.useEffect(() => {
     if (window.innerWidth > 991) {
@@ -21,13 +22,18 @@ function LandingPageHeader() {
       };
     }
   });
+
+  if (window.innerWidth < 400) {
+    backgrounImage = require("assets/img/bg_medium.jpg");
+  }
+
   return (
     <>
       <div className="page-header page-header-small">
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bg_large.jpg") + ")"
+            backgroundImage: "url(" + backgrounImage + ")"
           }}
           ref={pageHeader}
         ></div>
