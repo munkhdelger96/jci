@@ -15,7 +15,7 @@ function DynamicContainer({isHome = true, name, url, component}) {
     'news': 'МЭДЭЭ',
     'events': 'АРГА ХЭМЖЭЭ',
     'projects': 'ТӨСЛҮҮД',
-    'members': 'ГИШҮҮД',
+    'members': '2020 оны удирдлагын багийн гишүүд',
   }
   if (name == 'members') {
     sort = 'rank:asc';
@@ -23,7 +23,7 @@ function DynamicContainer({isHome = true, name, url, component}) {
   return (
     <div id={name} className={"section section-" + name + (!isHome && " m-t-10 full-heigh")}>
       <Container>
-        <h2 className="title text-center">{translation[name]}</h2>
+        <h2 className="title text-center">{translation[name].toUpperCase()}</h2>
         <div className={name}>
           <FirestoreCollection
             path={name}
@@ -48,13 +48,24 @@ function DynamicContainer({isHome = true, name, url, component}) {
                 href={url}
                 size="lg"
               >
-                БҮХ {translation[name].toUpperCase()}
+              
+                БҮХ {nameRenderer(name)}
               </Button>
             </div>
           }
       </Container>
     </div>
   );
+}
+
+function nameRenderer(name) {
+  let translation = {
+    'news': 'МЭДЭЭ',
+    'events': 'АРГА ХЭМЖЭЭ',
+    'projects': 'ТӨСЛҮҮД',
+    'members': 'гишүүд',
+  }
+  return translation[name].toUpperCase();
 }
 
 export default DynamicContainer;
