@@ -33,7 +33,7 @@ function About() {
                     className="image-container image-left"
                     style={{
                         backgroundImage:
-                        "url(" + require("assets/img/bg3.jpg") + ")"
+                        "url(" + require("assets/img/buga2.JPG") + ")"
                     }}
                     >
                     <p className="blockquote blockquote-info">
@@ -51,7 +51,7 @@ function About() {
                     className="image-container image-right"
                     style={{
                         backgroundImage:
-                        "url(" + require("assets/img/buga.jpg") + ")"
+                        "url(" + require("assets/img/buga1.JPG") + ")"
                     }}
                     ></div>
                     <p>
