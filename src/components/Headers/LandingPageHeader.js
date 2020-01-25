@@ -23,7 +23,7 @@ function LandingPageHeader() {
     }
   });
 
-  if (window.innerWidth < 400) {
+  if (window.innerWidth < 600) {
     backgrounImage = require("assets/img/bg_medium.jpg");
   }
 
