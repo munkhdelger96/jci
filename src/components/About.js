@@ -51,7 +51,7 @@ function About() {
                     className="image-container image-right"
                     style={{
                         backgroundImage:
-                        "url(" + require("assets/img/bg1.jpg") + ")"
+                        "url(" + require("assets/img/buga.jpg") + ")"
                     }}
                     ></div>
                     <p>
