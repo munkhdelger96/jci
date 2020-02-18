@@ -1,6 +1,6 @@
 {
   "name": "jci-web",
-  "homepage" : "http://twixdevs.github.io/jci",
+  "homepage": "http://twixdevs.github.io/jci",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
