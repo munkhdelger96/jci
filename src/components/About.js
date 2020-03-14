@@ -30,14 +30,14 @@ function About() {
                 <Row>
                 <Col md="5">
                     <div
-                    className="image-container image-left"
+                    className="jci-image-container"
                     style={{
                         backgroundImage:
                         "url(" + require("assets/img/buga2.JPG") + ")"
                     }}
                     >
                     <p className="blockquote blockquote-info">
-                        "Бид хамтдаа хийж хэрэгжүүлж буй ажлынхаа гол бүр байж чадна.
+                        "Бид хамтдаа хийж хэрэгжүүлж буй ажлынхаа гол дүр байж чадна.
                         Залуус бидэнд ирээдүйг бүтээх эрх нь үүрэг хариуцлагатайгаа бий" <br></br>
                         <br></br>
                         <small>- Б.МӨНХТУГ<br></br>
@@ -48,7 +48,7 @@ function About() {
                 </Col>
                 <Col md="5">
                     <div
-                    className="image-container image-right"
+                    className="jci-image-container"
                     style={{
                         backgroundImage:
                         "url(" + require("assets/img/buga1.JPG") + ")"

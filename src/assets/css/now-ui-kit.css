@@ -4325,7 +4325,8 @@ img {
     position: absolute;
     top: 376px;
     right: 155px;
-    z-index: 0; }
+    z-index: 0;
+    display:none; }
 
 .section-nucleo-icons .nucleo-container img {
   width: auto;
@@ -5151,10 +5152,7 @@ img {
 @media screen and (min-width: 768px) {
   .image-container.image-right {
     top: 80px;
-    margin-left: -100px;
     margin-bottom: 130px; }
-  .image-container.image-left {
-    margin-right: -100px; } }
 
 @media screen and (max-width: 768px) {
   .image-container.image-left {

@@ -9,6 +9,9 @@
       justify-items: center;
       text-align: center;
   }
+  p.blockquote {
+    display:none; 
+  }
 }
 @media only screen and (min-width: 770px) {
   .show-me-small {
@@ -261,4 +264,19 @@
   background-size: cover;
   box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
   border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .jci-image-container {
+    margin-bottom: 220px; }
+}
+
+
+.jci-image-container {
+  margin-bottom: 40px; 
+  height: 335px;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+  border-radius: .25rem;
 }
