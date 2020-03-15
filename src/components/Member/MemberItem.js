@@ -7,8 +7,7 @@ import {
 } from "reactstrap";
 
 const MemberItem = withRouter ((props) => {
-  const {image, position, joinedDate, firstName, lastName, rank} = props;
-  console.log(rank);
+  const {image, position, joinedDate, firstName, lastName, rank} = props;   
   return (
         <Col md="4" className = "members-row">
             <div className="hvr-grow hvr-grow:hover .hvr-grow:focus .hvr-grow:active">

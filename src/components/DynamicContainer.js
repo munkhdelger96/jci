@@ -34,7 +34,7 @@ function DynamicContainer({isHome = true, name, url, component}) {
                   <Spinner animation="border" className="m-t-3" color="secondary"/>
                 </center>
               ) :
-                <LazyList list={data} component={component} isHome={isHome}/>
+                <LazyList key={data.id} list={data} component={component} isHome={isHome}/>
             }}
           />
         </div>

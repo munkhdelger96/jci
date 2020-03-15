@@ -12,10 +12,8 @@ class LazyList extends React.Component {
       super(props);
       this.state = { numberOfItems : props.isHome ? 3 : 6, list : props.list };
     }
-  
     render() {
         const { list, numberOfItems } = this.state;
-    
         return (
             <div>
                 <Row>

@@ -8,8 +8,6 @@ import {
 import moment from "moment";
 
 function NewsDetail({content, time, category}) {
-  console.log(content)
-  console.log(category)
   if (content == null) content = '### Хуудас олдсонгүй';
 
   content = content.replace(/\\n/g, '\r');
@@ -21,7 +19,8 @@ function NewsDetail({content, time, category}) {
             <Col md="2" className="f-w-7 show-me-small">
               <Row className="m-l-1">
                 <img 
-                  className="img-fluid h-5 w-5 "
+                  className="img-fluid h-5 w-5"
+                  alt=""
                   src={"http://www.hotavatars.com/wp-content/uploads/2019/01/I80W1Q0.png"}
                 />
                 <div className="font-color-info-color m-l-1 h-center">
@@ -37,6 +36,7 @@ function NewsDetail({content, time, category}) {
               <div>
                 <img 
                   className="img-fluid h-5 w-5 m-t-4"
+                  alt=""
                   src={"http://www.hotavatars.com/wp-content/uploads/2019/01/I80W1Q0.png"}
                 />
                 <div className="font-color-info-color">

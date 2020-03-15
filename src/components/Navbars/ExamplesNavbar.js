@@ -7,13 +7,11 @@ import {
   DropdownMenu,
   DropdownItem,
   UncontrolledDropdown,
-  NavbarBrand,
   Navbar,
   NavItem,
   NavLink,
   Nav,
   Container,
-  UncontrolledTooltip
 } from "reactstrap";
 
 function ExamplesNavbar() {
